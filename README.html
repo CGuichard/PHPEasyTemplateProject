@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>README</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+</head>
+<body>
+<h1>PHPEasyTemplate</h1>
+<p>PHPEasyTeamplate is a basic minimal PHP site with a routing / template system, where you can create URLs for the pages of the website and link them to a template.</p>
+<h2>Getting Started</h2>
+<p>These instructions will get you a copy of the project up and running on your local machine for development purposes. This project has been made to serve as a base for a PHP website, it is deployable normally as such, like all others.</p>
+<h3>Prerequisites</h3>
+<h4>Apache</h4>
+<p>There are a few steps needed to get the project to work. First of all you need an Apache server running on your machine, with PHP 5.6.25 up to 7.0.1, which are the versions used to develop it. There is a lot of tutorials that already exists to install it, check them.</p>
+<h4>Rewrite module</h4>
+<p>Secondly, you will have to activate the Apache server Rewrite module. Doing it depends of your device and operating system, please check how to do it according to your device and Apache installation if the following instruction don't give you enough informations.</p>
+<p>For Windows, with WAMP and XAMP please check the documentation.</p>
+<p>For GNU/Linux, you will have to enter the following commands:</p>
+<pre><code>sudo a2enmod rewrite
+sudo /etc/init.d/apache2 restart #restart the Apache service
+</code></pre>
+
+<p>You will also need to edit the file <strong>/etc/apache2/apache2.conf</strong>.
+Find these lines:</p>
+<pre><code>&lt;Directory /var/www/&gt;
+    Options Indexes FollowSymLinks
+    AllowOverride None
+    Require all granted
+&lt;/Directory&gt;
+</code></pre>
+
+<p>Now, replace it by:</p>
+<pre><code>&lt;Directory /var/www/&gt;
+    Options Indexes FollowSymLinks
+    AllowOverride All
+    Require all granted
+&lt;/Directory&gt;
+</code></pre>
+
+<p>If your www folder is not /var/www/, please edit the corresponding Directory tag like that one.
+Restart again the Apache service like previously.</p>
+<h4>SQLite</h4>
+<p>If the sqlite driver does not exist, please install it.</p>
+<p>For GNU/Linux distribution, the package is like:</p>
+<pre><code>sudo apt-get install php{version}-sqlite
+</code></pre>
+
+<p>Use your PHP version at <em>{version}</em>. For your device maybe the package will recognize <em>sqlite3</em> at the end and not <em>sqlite</em>. Then restart your Apache service.</p>
+<h4>One final effort</h4>
+<p>Finally on GNU/Lunux make sure Apache have the needed rights to run the website (read, write and execute).</p>
+<h3>Installing</h3>
+<p>Once all the prerequisites are met, simply clone this project in the folder where you want to start developing your website.</p>
+<p>Make sure to put it in a folder served by the Apache service.</p>
+<h2>How to use it</h2>
+<p><strong>Note:</strong> By default the website database contains one user, with the login &quot;PHPEasyTemplate&quot; and the password &quot;mypassword&quot; (Yes great security here). You can delete this account in the database if you want.</p>
+<h3>Project structure</h3>
+<p>Here is the structure of the folders and files of the website:</p>
+<h5>Website root files</h5>
+<ol>
+<li><strong>.htaccess</strong> : Don't touch it, this file is used by Apache and contains the rule to redirect all urls to the management file.</li>
+<li><strong>conf.inc.php</strong> : Contains basic variables used by the project, such as the website name, the language etc... Modify it with your website values.</li>
+<li><strong>db.sqlite3</strong> : By default this file isn't present, but it is generated at the first load of the website if it doesn't exist.</li>
+<li><strong>README.md</strong> : This file.</li>
+<li><strong>routes.inf</strong> : Really important, this file contains the routes and associated templates of the website. Modify it to your heart content.</li>
+<li><strong>todo.txt</strong> : Don't mind it, this is just my recap of what I want to do in the future.</li>
+<li><strong>website.php</strong> : This file IS the most important one. All of the urls' requests are redirected to this file that handles the request. You don't have to modify it.</li>
+</ol>
+<h5>Website root folders</h5>
+<ol>
+<li><strong>uploads/</strong> : Folder where you can put all of the uploaded files.</li>
+<li>
+<strong>templates/</strong> : Contains the file base.php, which is the base of all templates, and two subfolders:
+<ol>
+<li><strong>errors/</strong> : Folder of the error web pages. You can design your own 404 error page for example here.</li>
+<li><strong>pages/</strong> : The folder where you put your php pages. See the next section to know how to add a page.</li>
+</ol>
+</li>
+<li>
+<strong>static/</strong> : Contains all of the static resources.
+<ol>
+<li><strong>img/</strong> : Stores pictures</li>
+<li><strong>libs/</strong> : Puts your libraries here.</li>
+<li><strong>scripts/</strong> : Here you can put javascript scripts or sql for your database.</li>
+<li><strong>styles/</strong> : Contains CSS files and fonts for your website.</li>
+</ol>
+</li>
+<li>
+<strong>includes/</strong> : Divided in two subfolders:
+<ol>
+<li><strong>modals/</strong> : You can put your modal files here.</li>
+<li><strong>parts/</strong> : Contains all of the website parts used in every page. You can modify here the content of your footer, your navigation bar etc...</li>
+</ol>
+</li>
+<li><strong>doc/</strong> : Classic one. Put your documentation here.</li>
+<li>
+<strong>api/</strong> : All PHP functions are developed here. This here your website api. Contains:
+<ol>
+<li><strong>init.inc.php</strong> : File loaded by <em>website.php</em>. All of the files needed for your website have to be loaded in it.</li>
+<li>
+<strong>v1/</strong> : Version 1 of the api. You can find in it:
+<ol>
+<li><strong>ajax/</strong> : This folder contains all of the pages used by AJAX requests in the project base.</li>
+<li><strong>controlers/</strong> : Contains controler files, files used to define functions to manipulate the model classes with the database.</li>
+<li><strong>models/</strong> : Contains the classes corresponding to your database tables.</li>
+<li><strong>PHPEasyTemplate/</strong> : Contains all of the basic functions used in the project. This part is not meant to be modified.</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<h3>Add a page to the website</h3>
+<p>To add a page to the website, you need to add its url route in the file <strong>routes.inf</strong>, and link it with its template with the same syntax as the other routes.</p>
+<pre><code>/my/url/route/ @mypage.php
+</code></pre>
+
+<p>Then you need to create your page in the folder <strong>/templates/pages/</strong>.</p>
+<p>To create a basic page, you will need this base:</p>
+<pre><code>&lt;?php
+  $PAGE_TITLE = &quot;Your page title&quot;;
+  $PAGE_SECTION = &quot;Section in the navbar that will be active&quot;;
+  $PAGE_CONTENT = &quot;Description of the page&quot;;
+?&gt;
+
+// Content here
+
+&lt;?php require_once( template(&quot;base.php&quot;) ); ?&gt;
+</code></pre>
+
+<p>In the place of the comment you have to use PHP ob functions, like this:</p>
+<pre><code>&lt;?php ob_start(); ?&gt;
+    // Content you want to add
+&lt;?php $page_content = ob_get_clean(); ?&gt;
+</code></pre>
+
+<p>The tag $page_content here is used to place the content of your web page. There exists some other tags, all listed in the template <strong>example.php</strong>. Here is the list: </p>
+<ol>
+<li><strong>$metas_content</strong> : Adds metas in &lt;head&gt;</li>
+<li><strong>$css_content</strong> : Adds css links in &lt;head&gt;</li>
+<li><strong>$page_content</strong> : Adds the content of the page</li>
+<li><strong>$modals_content</strong> : Adds specific modals to the page</li>
+<li><strong>$scripts_content</strong> : Adds scripts at the bottom of the page</li>
+</ol>
+<h3>Advice</h3>
+<p>I invite you to see how the template works by observing how this project works, to see how things are done. I invite you to check all of the functions of the folder <strong>api/v1/PHPEasyTemplate/</strong>, because all of these functions can be used in every template of the website and are really important, like <strong>url_for(&quot;/you/url/route&quot;)</strong>, used to create a link to another page. </p>
+<p>Please check all of this folder files to truly discover the functionalities of this template project.</p>
+<h2>Built With</h2>
+<ul>
+<li><a href="https://mdbootstrap.com/">Material Design for Bootstrap 4</a> - The CSS framework used (Bootstrap 4 based)</li>
+<li><a href="https://fontawesome.com/">Font Awesome</a> - Icon set and toolkit</li>
+<li><a href="https://github.com/cbschuld/Browser.php">Browser</a> - PHP Library used to detect browsers</li>
+<li><a href="https://github.com/nk-o/jarallax">Jarallax</a> - Library used to make parallax effect on web pages</li>
+</ul>
+<h2>Contributing</h2>
+<p>Due to certain circumstances, the project will be suspended for a while, however it is possible to send a message to trace bugs or to improve it.</p>
+<h2>Versioning</h2>
+<p>This project does not originally use any versioning, versioned development starting at the time of deployment of the code on Github for version 1.</p>
+<h2>Authors</h2>
+<ul>
+<li><strong>Clément GUICHARD</strong> - <em>Maintainer</em></li>
+</ul>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->

@@ -1,0 +1,6 @@
+- Home page
+- About page
+- Contact page
+- Upload page
+- Legal notice page
+- Upload api

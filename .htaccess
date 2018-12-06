@@ -1,0 +1,4 @@
+RewriteEngine On
+
+# This rule redirect all queries to apache to website.php
+RewriteRule ^([a-zA-Z0-9-_\[\]/]*)$ ./website.php

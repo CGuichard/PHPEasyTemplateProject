@@ -1,0 +1,16 @@
+#ROUTES
+/ @home.php
+/home/ @home.php
+/example/ @example.php
+/uploads/ @uploads.php
+/sign-up/ @sign-up.php
+/about/ @about.php
+/contact/ @contact.php
+/useless/ @useless.php
+/legal-notice/ @legal-notice.php
+/profile/[seq]/[log]/ @profile.php
+/logout/ @logout.php
+#AJAX
+/connection/ @v1/ajax/connection.php
+/sign-up/ @v1/ajax/sign-up.php
+/profile/modify/ @v1/ajax/profile-modify.php
